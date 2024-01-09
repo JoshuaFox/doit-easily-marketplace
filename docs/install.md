@@ -3,14 +3,14 @@
 
 ## Terraform modules
 
-There are Terraform modules here, under `docs/terraform`, `setup` and `app_deploy`, to be used at the steps as stated below.
+There are two Terraform modules here, under `docs/terraform`, `setup` and `app_deploy`, to be used at the steps as stated below.
 
-At the stages below, you can apply the modules with `terraform apply` in the relevant subdirectory providing variables as follows, either
+When you  apply the modules with `terraform apply` in the relevant subdirectory, you must provide variable values, either:
 
-1. If you just type `terraform apply` , you will have to manually enter variables like billing account ID or project ID
-2. You can provide a `.tfvars` file with variables.
+1. By default, you will have to manually enter variables like billing account ID or project ID.
+2. Or you can provide a `.tfvars` file with variables.
 
-As an alternative to `terraform apply` in the subdirs (modules), you can also copy the pertinent files to your own terraform modules and apply them there. You can also integrate these Terraform modules into your CI/CD system. While we strive to not make breaking changes the Terraform modules, we can't promise we won't.
+As an alternative to `terraform apply` in the modules (subdirs) of this project, you can also copy the pertinent files to your own terraform modules and apply them there. You can also integrate these Terraform modules into your CI/CD system. While we strive to not make breaking changes the Terraform modules, we can't promise we won't.
 
 ## The Install Process
 
